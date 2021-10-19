@@ -17,7 +17,9 @@ python build_query_result.py
 python create_percentage_multiwoz_dataset.py --percentage 10
 ```
 
-The data produced is provided in data,zip.
+The data produced is provided in data.zip.
+
+The MultiWoz data was used from [here](https://github.com/budzianowski/multiwoz/tree/master/data). 
 
 ## Training the models on various dataset sizes
 
