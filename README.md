@@ -9,16 +9,15 @@ This is the code for the paper "Simulated Chats for Building Dialog Systems: Lea
 
 ## Data Preprocessing
 
-We have provided the delexicalised MultiWoz 2.1 data which can be found by unziping createData/multiwoz21.zip. In order to run the delexicalise the data run the following command:
-```
-python delex.py
-```
+We have provided data.zip which contains data that is pre-processed. In order to pre-process the data manually follow the given procedure. 
 
-We further convert the data to a format which could be sent as an input to our models. The final data has again been provided in data.zip but could also be generated using the following command(example for a low resource setting of 10% has been provided):
+We have provided the delexicalised MultiWoz 2.1 data which can be found by unziping createData/multiwoz21.zip. We further convert the data to a format which could be sent as an input to our models. The final data has again been provided in data.zip but could also be generated using the following command(example for a low resource setting of 10% has been provided):
 ```
 python build_query_result.py
 python create_percentage_multiwoz_dataset.py --percentage 10
 ```
+
+The data produced is provided in data,zip.
 
 ## Training the models on various dataset sizes
 
