@@ -1,5 +1,5 @@
 # Simulated-Dialog-Generation
-This is the code for the paper "Simulated Chats for Building Dialog Systems: Learning to Generate Conversations from Instructions" published in the Findings of EMNLP 2021. [[Paper Link]](https://arxiv.org/pdf/2010.10216.pdf)
+This is the code for the paper "Simulated Chats for Building Dialog Systems: Learning to Generate Conversations from Instructions" published in the Findings of EMNLP 2021. [[Paper Link]](https://aclanthology.org/2021.findings-emnlp.103/)
 
 ## Requirements
 - Python 3.6
