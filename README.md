@@ -17,13 +17,13 @@ python build_query_result.py
 python create_percentage_multiwoz_dataset.py --percentage 10
 ```
 
-The data produced is provided in data.zip.
+The pre-processed data produced is provided in data.zip.
 
 The MultiWoz data was used from [here](https://github.com/budzianowski/multiwoz/tree/master/data). 
 
 ## Training the models on various dataset sizes
 
-We train 5 models for each dataset size i.e. siamese network for agent, siamese network for user, belief state model(delexicalised), user dialog generator and agent dialog generator. All the models can be trained in the following way:
+We train 5 models for each dataset size i.e. siamese network for agent, siamese network for user, belief state model(delexicalised), user dialog generator and agent dialog generator. The code shown below is for training the models on 10% of the data. We need to provide the path where the models need to be stored and the path of the data that is going to be used. All the models can be trained in the following way:
 ```
 python codes/bert_siamese_agent/train_margin.py --data data/multiwiz/agent/10p --model models/siamese/agent/10p --num-epoch 5
 python codes/bert_siamese/train_margin.py --data data/multiwiz/user/10p --model models/siamese/user/10p --num-epoch 5
